@@ -63,3 +63,41 @@ current_outcome = outcomes[input].to_s
 
 print "#{current_outcome} "
 ~~~
+
+## Machine Translation
+Machine translation of English converted character and outcome pairs.
+
+~~~ruby
+input = File.read("_translate/outcomes/nuetral_outcome.txt").strip.to_s.downcase
+
+actual_inputs = input.split(" ")
+
+row = 0
+limitation = input.size.to_i
+
+proto = {
+  ## Syntactical
+  "[" => "[",
+  "]" => "]",
+
+  ## Outcome specific
+  "charlotte"                  =>                  "charlotte",
+  "dies"                       =>                      "meurt",
+  "lives"                      =>                       "vies",
+  "never"                      =>                     "jamais",
+  "dated"                      =>                "rendez-vous",
+  "player"                     =>                    "joueuse",
+}
+
+limitation.times do
+  current_word = actual_inputs[row]
+
+  new_word = proto[current_word]
+
+  print "#{new_word} "
+
+  row = row + 1
+end
+
+puts " "
+~~~
