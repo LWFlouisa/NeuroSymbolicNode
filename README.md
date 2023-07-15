@@ -16,22 +16,32 @@ class StateMachine
 
   def activate_node2
     system("cd _node2; ruby solve_unknown.rb")
+
+    sleep(1)
   end
 
   def activate_node4
     system("cd _node4; ruby solve_unknown.rb")
+
+    sleep(1)
   end
 
   def activate_node8
     system("cd _node8; ruby solve_unknown.rb")
+
+    sleep(1)
   end
 
   def activate_node7
     system("cd _node7; ruby solve_unknown.rb")
+
+    sleep(1)
   end
 
   def activate_node5
     system("cd _node5; ruby solve_unknown.rb")
+
+    sleep(1)
   end
 
   def transition
