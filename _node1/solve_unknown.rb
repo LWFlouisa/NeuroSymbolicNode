@@ -17,7 +17,7 @@ open("_imaginedpath/outcomes/nuetral_outcome.txt", "w") { |f|
 }
 
 # Imagined a compromise path that is neither ideal or tragic.
-open("_imaginedpath/peolog/nuetral_outcome.pl", "w") { |f|
+open("_imaginedpath/prolog/nuetral_outcome.pl", "w") { |f|
   segment_1 = character_fate_rules[1].strip
   segment_2 = dating_outcome_rules[0].strip
 
