@@ -43,3 +43,23 @@ Therefore each notes assumes a bright nuetral outcome.
 
 ## ToDo
 A hash table that converts data to plain English.
+
+~~~ruby
+input = File.read("_imaginedpath/outcomes/nuetral_outcome.txt").strip.to_s
+
+outcomes = {
+  ## Worst Outcome
+  "[ charlotte dies ] [ never dated player ]" => "BIANCA >> Charlotte died before the player ever met her.",
+
+  ## Nuetral Outcome
+  "[ charlotte dies ] [ dated player ]" => "BIANCA >> Charlotte had met the player previously, but player failed to rescue her.",
+  "[ charlotte lives ] [ never dated player ]" => "BIANCA >> Although Charlotte wasn't executed, player was never in a situation to meet her.",
+
+  ## Best Outcome
+  "[ charlotte lives ] [ dated player ]" => "BIANCA >> Charlotte met the player before and eventually they date and become permanent room mates.",
+}
+
+current_outcome = outcomes[input].to_s
+
+print "#{current_outcome} "
+~~~
