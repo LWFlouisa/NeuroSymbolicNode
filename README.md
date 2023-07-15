@@ -1,4 +1,6 @@
 # NeuroSymbolicNode
+A design for 48 active neurons, and 12 inactive neurons. A 0.25 percent approach when thinking of it like a standard neuro network.
+
 ## Vortex Based State Machine
 
 ~~~
