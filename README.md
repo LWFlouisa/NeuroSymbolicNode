@@ -30,3 +30,16 @@ For each node:
 0 0,0 0,1
 1 1,0 1,1
 ~~~
+
+## Data Structure For Each Node
+Pairs of character fates and outcomes:
+
+~~~
+[ charlotte dies ] [ never dates player ]
+[ charlotte lives ] [ dates player ]
+~~~
+
+Therefore each notes assumes a bright nuetral outcome.
+
+## ToDo
+A hash table that converts data to plain English.
